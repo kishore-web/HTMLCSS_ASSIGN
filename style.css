@@ -65,11 +65,6 @@ header ul li {
   border: 3px solid #ec2197;
   padding-top: 10px;
 }
-
-/* .float-container p {
-  text-align: center;
-  margin-top: 32px;
-} */
 .para {
   position: absolute;
   left: 50%;
@@ -89,19 +84,35 @@ header ul li {
   height: 80px;
   width: 80px;
   border: 3px solid #ab2b76;
-  background-color: #b47b00;
+  background-color: #e3b910;
   margin: 0px auto;
   border-radius: 5px;
   position: relative;
 }
-.middle-float .hero {
+.float-container .middle-float .hero {
   float: left;
 }
-.right-float .hero {
+.float-container .right-float .hero {
   float: right;
 }
 .first-letter {
   font-size: 26px;
+}
+.float-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+.float-container-2 .middle-float .hero {
+  left: 45px;
+  top: 40px;
+  z-index: 5;
+}
+.float-container-2 .right-float .hero {
+  float: left;
+  margin-left: 30px;
 }
 .flex-div {
   clear: both;
@@ -170,8 +181,8 @@ html {
 }
 .arrow-button {
   position: fixed;
-  width: 60px;
-  height: 50px;
+  width: 55px;
+  height: 45px;
   bottom: 90px;
   right: 0;
   background-color: #e8005a;
