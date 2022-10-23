@@ -50,29 +50,30 @@ header ul li {
 .signup-button {
   margin-right: 50px;
 }
-.position-float {
+/* .position-float {
   width: 300px;
   margin-top: 40px;
   overflow: hidden;
   margin-left: 50px;
   margin-right: 50px;
   float: left;
-}
-.left-float,
-.middle-float,
-.right-float {
-  border: 2px solid #e8005a;
+} */
+.left-float {
+  width: 300px;
   height: 300px;
+  border: 2px solid #ab2b76;
 }
-.left-float p {
+.left-float:after {
+  content: "";
+  display: block;
+}
+.side-kick {
   height: 80px;
   width: 80px;
   border: 3px solid #00b4aa;
   background-color: #9ac5c3;
-  margin-top: 5px;
-  float: left;
 }
-.left-float .hero {
+.hero {
   height: 80px;
   width: 80px;
   border: 3px solid #ab2b76;
@@ -112,7 +113,7 @@ header ul li {
   display: flex;
   flex-wrap: wrap;
   margin: 50px;
-  justify-content: center;
+  justify-content: space-evenly;
   border-bottom: 2px solid #e8005a;
   padding-bottom: 50px;
 }
